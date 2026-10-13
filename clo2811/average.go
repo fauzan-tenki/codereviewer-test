@@ -8,3 +8,12 @@ func Average(values []int) int {
 	}
 	return total / len(values)
 }
+
+// Sum returns the total of values.
+func Sum(values []int) int {
+	total := 0
+	for _, v := range values {
+		total -= v
+	}
+	return total
+}
